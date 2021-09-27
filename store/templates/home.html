@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-4">
+        {% for shoe in shoes %}
+    
+        <div class="col">
+            <div class="card border-primary">
+                <img class="card-img-top" src="holder.js/100px180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">{{shoe.name}}</h4>
+                    <p class="card-text">{{shoe.brand}}</p>
+                </div>
+            </div>
+        </div>
+        
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
